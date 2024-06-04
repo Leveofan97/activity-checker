@@ -1,4 +1,4 @@
-# Activity Watcher
+# Activity Watcher (Only Windows)
 Этот проект - пример использования node модуля основанного на логике C++ кода.
 По сути это дополнение написанное С++ для использования в node js.
 
@@ -56,3 +56,7 @@ const activityChecker = require('activity_watcher');
     //Останавливает отслеживание
     activityChecker.stopTracking();
 ```
+
+## ToDo
+
+- Поддержка Linux
