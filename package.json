@@ -1,0 +1,19 @@
+{
+  "name": "activity-check",
+  "version": "1.0.0",
+  "description": "Проверка активности пользователя на уровни операционной системы / Implementation of a node module to check user activity at the operating system level",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["node module C++", "electron node module", "global check keydown", "global check mousemove"],
+  "author": "Korepanov Andrey",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^30.0.9",
+    "electron-builder": "^25.0.0-alpha.9"
+  },
+  "dependencies": {
+    "node-addon-api": "^8.0.0"
+  }
+}
