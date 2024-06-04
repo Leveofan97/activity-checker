@@ -10,5 +10,25 @@
 <button id="start">Запустить проверку активности</button>
 <button id="stop">Остановить проверку активности</button>
 <p id="state">Состояние: Unknown</p>
+
+<script>
+    document.getElementById('start').addEventListener('click', () => {
+        window.api.startTracking();
+    });
+
+    document.getElementById('stop').addEventListener('click', () => {
+        window.api.stopTracking();
+    });
+
+    window.api.onStateChange((state) => {
+        document.getElementById('state').textContent = `Состояние: ${state}`;
+
+        const notification = new Notification("Оповещение", {
+            body: `Состояние: ${state}`,
+        })
+
+        notification.show()
+    });
+</script>
 </body>
 </html>
