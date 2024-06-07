@@ -49,7 +49,8 @@ const activityChecker = require('activity_watcher');
     
     //Запускает отслеживание  
     activityChecker.startTracking((state) => {
-        console.log("Состояние: ", state);
+        console.log("Состояние: ", state);    // вернет active/inactive при смене статуса (если пользователь активен, двигает мышью или нажимает клавиатуру, статус active будет неизменен.
+                                            // Состояние измениться при истечении inactivityThreshold если пользователь прекратил активность
     }, inactivityThreshold, checkInterval);
     ...
     
